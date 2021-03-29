@@ -1,0 +1,25 @@
+#Slider with Quotes 
+{...}
+          - label: 'Slider'
+            name: 'slider'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - {label: 'Normal', value: 'container'}
+                  - {label: 'Fluid', value: 'container-fluid'}
+              - {label: 'Background Color', name: 'bgColor', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'white', 'info'], required: false}
+              - {label: 'Text Color', name: 'textColor', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'white', 'info'], required: false}
+              - {label: 'Title', name: 'title', widget: 'markdown', required: false}
+              - {label: 'Show Indicators', name: 'showIndicators', widget: 'boolean', default: true, required: false}
+              - {label: 'Show Navigation', name: 'showNavigation', widget: 'boolean', default: true, required: false}
+              - label: 'Quotes'
+                name: 'quotes'
+                widget: 'list'
+                fields:
+                - {label: 'Image', name: 'image', widget: 'image', required: false}
+                - {label: 'Alternative Text', name: 'alt', widget: 'string', required: false}
+                - {label: 'Quotation', name: 'quotation', widget: 'text', required: false}
+                - {label: 'Citation', name: 'citation', widget: 'string', required: false}

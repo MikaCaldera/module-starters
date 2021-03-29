@@ -1,0 +1,22 @@
+{# Cards #}
+
+<section class="section module-cards bg-{{ item.BgColor }} text-{{ item.textAlign }}" id="section-{{ loop.index }}">
+  <div class="{{ item.container }}">
+    <div class="content-row row">
+      <div class="col-12">
+        {{ item.body | markdownFilter | safe }}
+      </div>
+    </div>
+    <div class="cards-row row row-cols-1 row-cols-md-{{ item.rowCols }}">
+
+      {% if item.card %}
+       {% include "partials/components/modules/card.njk" %}
+      {% endif %}
+
+      {% if item.cardservice %}
+        {% include "partials/components/modules/cardservice.njk" %}
+      {% endif %}
+      
+    </div>
+  </div>
+</section>

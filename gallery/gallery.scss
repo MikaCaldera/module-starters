@@ -1,0 +1,15 @@
+// Gallery
+.module-gallery {
+  .row-gallery {
+    @extend .justify-content-center;
+  }
+
+  .gallery-item {
+    @extend .text-center, .g-0;
+
+    @include make-col-ready(3);
+    @include media-breakpoint-up(sm) {
+      @include make-col(3);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{# CTA Call to Action #}
+
+{% if item.link %}
+  <aside>
+    <a class="btn btn-{{ item.buttonType }} {{ item.btnFullWidth }} btn-lg" href="{{ item.link }}">{{ item.linkText }}</a>
+  </aside>
+{% endif %}

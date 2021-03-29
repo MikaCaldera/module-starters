@@ -1,0 +1,32 @@
+// Media Text
+
+.module-media {
+  .media-row {
+    @extend .align-items-center, .justify-content-start;
+
+    figure {
+      @extend .mb-0, .px-0;
+    }
+
+    .mt-content {
+      @extend .py-5;
+
+      &.order-1 {
+        @include media-breakpoint-only(md) { padding-left:4rem; padding-right:4rem; }
+        @include media-breakpoint-only(lg) { padding-left:6rem; padding-right:6rem; }
+        @include media-breakpoint-only(xl) { padding-left:7rem; padding-right:7rem; }
+        @include media-breakpoint-only(xxl) { padding-left:7rem; padding-right:7rem; }
+      }
+
+      &.order-3 {
+        @include media-breakpoint-only(md) { padding-left:4rem; padding-right:4rem; }
+        @include media-breakpoint-only(lg) { padding-left:6rem; padding-right:6rem; }
+        @include media-breakpoint-only(xl) { padding-left:7rem; padding-right:7rem; }
+        @include media-breakpoint-only(xxl){ padding-left:7rem; padding-right:7rem; }
+      }
+    }
+  }
+}
+
+
+

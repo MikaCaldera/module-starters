@@ -1,0 +1,33 @@
+.module-slider {
+  @extend .extra-padding;
+  
+  .section-slider-header {
+    @extend .text-center, .pb-4;
+  }
+
+  .slider-container {
+    .slide {
+      @extend .px-3;
+
+      .slider-row {
+        @extend .row, .d-flex, .justify-content-center;
+
+        .project-slider {
+          .carousel-item {
+            @extend .py-2;
+        
+            .blockquote {
+              .blockquote-footer {
+                @extend .py-1, .fw-bold, .text-dark;
+        
+                cite {
+                  font-style: normal !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

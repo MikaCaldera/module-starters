@@ -1,0 +1,10 @@
+{% for card in item.card %}
+  <article class="col">
+    <div class="card">
+      <img src="{{ card.image }}" class="card-img" alt="{{ card.alt }}">
+        <h3 class="card-title">{{ card.title }}</h3>
+          {{ card.text | markdownFilter | safe }}
+      <a class="btn {{ card.btnFullWidth }}" type="button" href="{{ card.link }}">{{ card.linkText }}</a>
+    </div>
+  </article>
+{% endfor %}

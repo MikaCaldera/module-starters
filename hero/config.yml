@@ -1,0 +1,29 @@
+{...}
+          - label: 'Hero Split'
+            name: 'hero'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - {label: 'Normal', value: 'container'}
+                  - {label: 'Fluid', value: 'container-fluid'}
+                default: 'container'
+              - {label: 'Background Image', name: 'background', widget: 'image', required: false}
+              - {label: 'Header', name: 'header', widget: 'markdown', required: false}
+              - {label: 'Small Blurb', name: 'smblurb', widget: 'markdown', required: false}
+              - {label: 'Large Blurb', name: 'lgblurb', widget: 'markdown', required: false}
+{...}
+          - label: 'Hero Second'
+            name: 'herosecond'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - {label: 'Normal', value: 'container'}
+                  - {label: 'Fluid', value: 'container-fluid'}
+                default: 'container'
+              - {label: 'Background Image', name: 'background', widget: 'image', required: false}

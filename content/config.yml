@@ -1,0 +1,27 @@
+# Call to action is nested you may need to remove it. 
+{...}
+          - label: 'Content'
+            name: 'content'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - {label: 'Normal', value: 'container'}
+                  - {label: 'Fluid', value: 'container-fluid'}
+                default: 'container'
+              - {label: 'Background Color', name: 'BgColor', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'white', 'info'], required: false}
+              - {label: 'Text Color', name: 'textColor', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'white', 'info'], required: false}
+              - {label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ['left', 'right', 'center'], default: 'left'}
+              - {label: 'Body', name: 'body', widget: 'markdown', required: false}
+              - {label: 'Call to Action Link', name: 'link', widget: 'string', required: false}
+              - {label: 'Call to Action Link Text', name: 'linkText', widget: 'string', default: 'Learn More', required: false}
+              - {label: 'Call to Action Button Type', name: 'buttonType', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'info', 'success', 'warning', 'danger'], default: 'primary', required: false}
+              - label: 'Full-Width Buttons?'
+                name: 'btnFullWidth'
+                widget: 'select'
+                options:
+                  - {label: 'Yes', value: 'w-75'}
+                  - {label: 'No', value: ''}
+                required: false

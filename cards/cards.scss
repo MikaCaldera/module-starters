@@ -1,0 +1,43 @@
+// Cards
+.module-cards {
+  @extend .extra-padding;
+
+  .cards-row {
+    @extend .text-center;
+  
+    .card {
+      @extend .py-5;
+
+      p {
+        @extend .mx-auto, .pb-3;
+
+        max-width: 75%;
+      }
+
+      .card-img {
+        @extend .my-3;
+      }
+
+      h3 {
+        @extend .py-3;
+
+        letter-spacing: 0.1rem;
+      }
+  
+      .btn {
+        @extend .btn-secondary, .btn-lg;
+      }
+    }
+  }
+  section:nth-child(2) {
+    border-top: 2px solid #00adee;
+    border-bottom: 2px solid #00adee;
+
+     @include media-breakpoint-up(md) {     
+      border-left: 2px solid #00adee;
+      border-right: 2px solid #00adee; 
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+}

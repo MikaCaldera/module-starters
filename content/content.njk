@@ -1,0 +1,10 @@
+{# Content #}
+
+<section class="section module-content text-{{ item.textAlign }} bg-{{ item.BgColor }} text-{{ item.textColor }}">
+  <div class="{{ item.container }}">
+    <article>
+      {{ item.body | markdownFilter | safe }}
+      {% include "partials/components/modules/cta.njk" %}
+    </article>
+  </div>
+</section>

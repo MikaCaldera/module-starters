@@ -1,0 +1,20 @@
+{# Media Text #}
+
+<section class="section module-media bg-{{ item.BgColor }} text-{{ item.textColor }}" id="section-{{ loop.index }}">
+  <div class="{{ item.container }}">
+    <div class="row media-row">
+      <figure class="col-lg-6 justify-content-start order-2">
+        {% if item.videoEmbed %}
+          {{ item.videoEmbed | markdownFilter | safe }}
+        {% else %}
+            <img src="{{ item.image }}" class="img-fluid w-100" alt="{{ item.alt }}">
+        {% endif %}
+      </figure>
+      <article class="mt-content col-lg-6 order-{{ item.textPosition }}">
+        {{ item.title | markdownFilter | safe }}  
+        {{ item.body | markdownFilter | safe }}
+        {% include "partials/components/modules/cta.njk" %}
+      </article>
+    </div>
+  </div>
+</section>

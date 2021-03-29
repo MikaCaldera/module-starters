@@ -1,0 +1,58 @@
+{...}
+          - label: 'Cards'
+            name: 'cards'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - {label: 'Normal', value: 'container'}
+                  - {label: 'Fluid', value: 'container-fluid'}
+                default: 'container'
+              - {label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ['left', 'right', 'center'], default: 'left'}
+              - {label: 'Background Color', name: 'BgColor', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'white', 'info'], required: false}
+              - {label: 'Body', name: 'body', widget: 'markdown', required: false}
+              - {label: 'Cards per row', name: 'rowCols', widget: 'number', max: 12, min: 1, default: 3}
+              - label: 'Card'
+                name: 'card'
+                widget: 'list'
+                fields:
+                  - {label: 'Image', name: 'image', widget: 'image'}
+                  - {label: 'Alternative Text', name: 'alt', widget: 'string'}
+                  - {label: 'Title', name: 'title', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown', required: false}
+                  - {label: 'Link', name: 'link', widget: 'string', required: false}
+                  - {label: 'Link Text', name: 'linkText', widget: 'string', required: false}
+                  - label: 'Full-Width Buttons?'
+                    name: 'btnFullWidth'
+                    widget: 'select'
+                    options:
+                      - {label: 'Yes', value: 'w-75'}
+                      - {label: 'No', value: ''}
+                    required: false
+
+{...}
+          - label: 'Cards'
+            name: 'cards'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - {label: 'Normal', value: 'container'}
+                  - {label: 'Fluid', value: 'container-fluid'}
+                default: 'container'
+              - {label: 'Text Alignment', name: 'textAlign', widget: 'select', options: ['left', 'right', 'center'], default: 'left'}
+              - {label: 'Background Color', name: 'BgColor', widget: 'select', options: ['light', 'dark', 'primary', 'secondary', 'white', 'info'], required: false}
+              - {label: 'Body', name: 'body', widget: 'markdown', required: false}
+              - {label: 'Cards per row', name: 'rowCols', widget: 'number', max: 12, min: 1, default: 3}
+              - label: 'Card Service'
+                name: 'cardservice'
+                widget: 'list'
+                fields:
+                  - {label: 'Title', name: 'title', widget: 'markdown', required: false}
+                  - {label: 'Image', name: 'image', widget: 'image'}
+                  - {label: 'Alternative Text', name: 'alt', widget: 'string'}
+                  - {label: 'Text', name: 'text', widget: 'markdown', required: false}

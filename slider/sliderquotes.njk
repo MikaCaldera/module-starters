@@ -1,0 +1,19 @@
+{# Slider Quotes #}
+
+{% for quote in item.quotes %}
+
+<div class="carousel-item {% if loop.first == true %} active {% endif %}">
+  <div class="row d-md-flex justify-content-center align-items-center">
+    <figure class="col-12 col-md-3 text-center py-3">
+      <img src="{{ quote.image }}" class="img-fluid" alt="{{ quote.alt }}">
+    </figure>
+    <blockquote class="blockquote col-12 col-md-8">
+      {{ quote.quotation | markdownFilter | safe }}
+      <footer class="blockquote-footer">
+        <cite title="{{ quote.citation }}">{{ quote.citation }}</cite>
+      </footer>
+    </blockquote>
+  </div>
+</div>
+
+{% endfor %}

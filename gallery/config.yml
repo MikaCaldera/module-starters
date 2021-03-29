@@ -1,0 +1,18 @@
+{...}
+          - label: 'Gallery'
+            name: 'gallery'
+            widget: 'object'
+            fields:
+              - label: 'Container'
+                name: 'container'
+                widget: 'select'
+                options:
+                  - { label: "Normal", value: "container" }
+                  - { label: "Fluid", value: "container-fluid" }
+                default: "container"
+              - label: 'Images'
+                name: 'images'
+                widget: 'list'
+                fields:
+                  - { label: 'Image', name: 'image', widget: 'image'}
+                  - { label: 'Alternative Text', name: 'alt', widget: 'string'}
